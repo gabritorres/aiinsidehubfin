@@ -34,68 +34,70 @@ export default function Article({ article }: { article: any }) {
   } = article[0].attributes;
   return (
     <Layout title={`Article ${title}`}>
-      <div className="flex flex-col w-1/2 ml-auto mr-auto">
-        <div className="text-[28px] font-extrabold uppercase text-justify">
+      <div className="flex flex-col w-full md:w-1/2 mx-auto">
+        <div className="text-4xl md:text-6xl font-extrabold uppercase text-center text-justify">
           {title}
         </div>
-        <br></br>
-        <div className="text-justify">{description}</div>
-        <br></br>
+        <br />
+        <div className="text-lg md:text-xl text-justify px-6 md:px-0">
+          {description}
+        </div>
+        <br />
         <Image
           src={image1?.data?.attributes?.formats?.medium?.url}
           width={600}
           height={500}
           alt={`Image ${title}`}
         />
-        <br></br>
+        <br />
       </div>
 
-      <div className="flex flex-col w-1/2 ml-auto mr-auto">
-        <div className="font-bold text-justify">{title2}</div>
-        <br></br>
-        <div className="text-justify">{text2}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title3}</div>
-        <br></br>
-        <div className="text-justify">{text3}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title4}</div>
-        <br></br>
-        <div className="text-justify">{text4}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title5}</div>
-        <br></br>
-        <div className="text-justify">{text5}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title6}</div>
-        <br></br>
-        <div className="text-justify">{text6}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title7}</div>
-        <br></br>
-        <div className="text-justify">{text7}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title8}</div>
-        <br></br>
-        <div className="text-justify">{text8}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title9}</div>
-        <br></br>
-        <div className="text-justify">{text9}</div>
-        <br></br>
-        <br></br>
-        <div className="font-bold text-justify">{title10}</div>
-        <br></br>
-        <div className="text-justify">{text10}</div>
-        <br></br>
-        <br></br>
+      <div className="flex flex-col w-full md:w-1/2 mx-auto px-6 md:px-0">
+        <div className="text-xl font-bold text-justify">{title2}</div>
+        <br />
+        <div className="text-lg text-justify">{text2}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title3}</div>
+        <br />
+        <div className="text-lg text-justify">{text3}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title4}</div>
+        <br />
+        <div className="text-lg text-justify">{text4}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title5}</div>
+        <br />
+        <div className="text-lg text-justify">{text5}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title6}</div>
+        <br />
+        <div className="text-lg text-justify">{text6}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title7}</div>
+        <br />
+        <div className="text-lg text-justify">{text7}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title8}</div>
+        <br />
+        <div className="text-lg text-justify">{text8}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title9}</div>
+        <br />
+        <div className="text-lg text-justify">{text9}</div>
+        <br />
+        <br />
+        <div className="text-xl font-bold text-justify">{title10}</div>
+        <br />
+        <div className="text-lg text-justify">{text10}</div>
+        <br />
+        <br />
       </div>
     </Layout>
   );

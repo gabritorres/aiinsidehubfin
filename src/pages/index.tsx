@@ -9,21 +9,21 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <Layout title={"Home"} description={"Discover the fascinating world of AI"}>
-      <div className="flex justify-between bg-white">
-        <div className="ml-[330px] mt-[90px] text-center t-4 text-3xl font-bold">
-          <p className="text-center t-4 text-3xl font-bold mb-[20px] uppercase text-black">
+      <div className="flex flex-col lg:flex-row justify-between bg-white">
+        <div className="lg:w-1/3 mt-8 text-center">
+          <p className="text-3xl font-bold uppercase text-black">
             - Discover The Power of THE AI -
           </p>
-
           <Image
             src={fotHome1.src}
             width={400}
             height={400}
             alt="Unleash the Potential of AI and Discover its Power for Your Business"
+            className="mx-auto mt-8"
           />
         </div>
-        <div className="w-[500px] h-[800px]">
-          <div className="text-center t-4 text-5xl font-extrabold tracking-[-0.04em] text-black sm:text-5xl sm:leading-[3.5rem] mt-[10px] mb-[15px]">
+        <div className="lg:w-1/3 mt-8 text-center">
+          <div className="text-5xl font-extrabold tracking-tighter text-black leading-tight mb-8">
             ARTICLES
           </div>
           <p className="text-justify text-black">
@@ -52,8 +52,8 @@ export default function Home() {
             browse our collection of articles today and join the conversation!
           </p>
         </div>
-        <div className="mr-[330px] mt-[90px] text-center t-4 text-3xl font-bold">
-          <p className="text-center t-4 text-3xl font-bold mb-[20px] text-black">
+        <div className="lg:w-1/3 mt-8 text-center">
+          <p className="text-3xl font-bold text-black">
             - EXPLORE THE AMAZING WORLD OF AI -
           </p>
           <Image
@@ -61,6 +61,7 @@ export default function Home() {
             width={400}
             height={400}
             alt="Enter the Exciting World of AI and Explore its Limitless Possibilities"
+            className="mx-auto mt-8"
           />
         </div>
       </div>

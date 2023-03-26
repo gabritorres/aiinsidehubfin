@@ -11,12 +11,10 @@ export default function Articles({ articles }: { articles: any }) {
         "Explore in-depth the latest trends in artificial intelligence"
       }
     >
-      <main className="contenedor">
-        <div className="">
-          {articles.map((article: { id: string; attributes: any }) => (
-            <Articulo key={article.id} article={article.attributes} />
-          ))}
-        </div>
+      <main className="container mx-auto my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        {articles.map((article: { id: string; attributes: any }) => (
+          <Articulo key={article.id} article={article.attributes} />
+        ))}
       </main>
     </Layout>
   );
