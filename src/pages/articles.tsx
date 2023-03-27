@@ -32,15 +32,12 @@ export default function Articles({ articles }: { articles: any }) {
 
 export async function getServerSideProps() {
   try {
-    const respuesta = await fetch(`${process.env.API_URL}/articles?populate=*`);
-    const { data: articles } = await respuesta.json();
+    const response = await fetch(`${process.env.API_URL}/articles`);
+    const articles = await response.json();
     console.log("articulos: ", articles);
-    const articlesArray = articles.map(
-      (article: { [key: string]: any }) => article
-    );
     return {
       props: {
-        articles: articlesArray,
+        articles,
       },
     };
   } catch (error) {
