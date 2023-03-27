@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Layout from "../../components/layout";
 import Image from "next/image";
+import fotInsta from "../../public/img/fotInsta.svg";
+import fotTik from "../../public/img/fotTik.svg";
+import paypal from "../../public/img/fotPaypal.webp";
 
 export default function Nosotros() {
   return (
@@ -8,38 +11,48 @@ export default function Nosotros() {
       title={"About Us"}
       description={"Connect with us to support you on your AI journey"}
     >
-      <main className="contenedor">
-        <h1 className="heading">Nosotros </h1>
-
-        <div className="">
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse mollis, urna non bibendum blandit, lectus libero
-              condimentum quam, et volutpat eros augue ac diam. Praesent ac ante
-              consectetur, viverra dolor vitae, euismod ipsum. Class aptent
-              taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Nullam volutpat nisi eu enim commodo, quis
-              tincidunt magna aliquet. Integer in rutrum ipsum, ac convallis
-              ante. Etiam id urna et magna venenatis pulvinar. Nullam porttitor
-              nec tortor in malesuada. Nam pharetra vulputate orci eu malesuada.
-              Vivamus sed ultricies enim. Nam id efficitur risus. Praesent
-              molestie lectus consectetur eleifend consequat. Duis blandit metus
-              in nisi dapibus mattis eget vel ex.
-            </p>
-            <br></br>
-            <br></br>
-            <p>
-              Pellentesque pretium nisi vitae ante aliquam lacinia. Maecenas
-              condimentum volutpat magna, at laoreet est cursus a. Donec vitae
-              diam urna. Cras rutrum nec nibh in finibus. Fusce condimentum
-              eleifend nulla, non varius neque ultricies euismod. Cras molestie
-              magna ac finibus lobortis. Suspendisse pretium ex nisi, vel
-              pellentesque lorem ultrices a.
-            </p>
+      <div className="flex flex-col lg:flex-row justify-center bg-white">
+        <div className="lg:w-1/3 mt-8 text-center">
+          <div className="pb-[10px] text-5xl font-extrabold tracking-tighter text-black leading-tight mb-8">
+            ABOUT US
+          </div>
+          <div className="flex flex-row justify-center">
+            <div className="m-[20px]">
+              <Link href="https://www.instagram.com">
+                <Image
+                  src={fotInsta.src}
+                  width={300}
+                  height={300}
+                  alt="Our Instagram Account"
+                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                />
+              </Link>
+            </div>
+            <div className="m-[20px]">
+              <Link href="https://www.tiktok.com">
+                <Image
+                  src={fotTik.src}
+                  width={300}
+                  height={300}
+                  alt="Our Tiktok Account"
+                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                />
+              </Link>
+            </div>
+            <div className="m-[20px]">
+              <Link href="https://www.paypal.com">
+                <Image
+                  src={paypal.src}
+                  width={300}
+                  height={300}
+                  alt="Our Paypal Account"
+                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                />
+              </Link>
+            </div>
           </div>
         </div>
-      </main>
+      </div>
     </Layout>
   );
 }
