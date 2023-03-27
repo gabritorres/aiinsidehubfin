@@ -14,11 +14,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Discover the fascinating world of AI"
           />
-          <link
-            rel="icon"
-            type="image/x-icon"
-            href="C:\Users\gabri\Documents\Proyectos\aiinsidehub\public\img\icono.ico"
-          />
+          <link rel="icon" type="image/x-icon" href="/img/icono.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com/" />
           <link
             rel="preconnect"

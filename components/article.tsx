@@ -57,3 +57,5 @@ export default function Articles({ article }: { article: any }) {
     </div>
   );
 }
+ 
+      </Link>
