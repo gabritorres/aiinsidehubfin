@@ -1,19 +1,46 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Footer() {
+  const router = useRouter();
   return (
-    <footer>
-      <div className="flex flex-col sm:flex-row sm:h-[340px] justify-between w-full bg-[#1A1A1A]">
-        <nav className="text-white no-underline text-2xl uppercase sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px] flex justify-center sm:justify-end">
-          <Link href="/" className="mr-6">
-            HOME
-          </Link>
-          <Link href="/articles" className="mr-6">
-            ARTICLES
-          </Link>
-          <Link href="/aboutus">ABOUT US</Link>
+    <footer className="bg-[#1A1A1A] py-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <nav className="text-white text-lg md:text-2xl uppercase mb-4 md:mb-0">
+          <ul className="flex flex-col md:flex-row md:justify-center">
+            <li className="mr-4 md:mr-6">
+              <Link
+                href="/"
+                className={`${
+                  router.pathname === "/" && "border-b-2 border-white"
+                }`}
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="mr-4 md:mr-6">
+              <Link
+                href="/articles"
+                className={`${
+                  router.pathname === "/articles" && "border-b-2 border-white"
+                }`}
+              >
+                ARTICLES
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/aboutus"
+                className={`${
+                  router.pathname === "/aboutus" && "border-b-2 border-white"
+                }`}
+              >
+                ABOUT US
+              </Link>
+            </li>
+          </ul>
         </nav>
-        <p className="text-white text-2xl uppercase mt-[25px] md:mt-[75px] md:mr-[120px] sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px]">
+        <p className="text-white text-lg md:text-2xl uppercase mt-4 md:mt-0">
           ALL RIGHTS RESERVED {new Date().getFullYear()}
         </p>
       </div>

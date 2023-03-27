@@ -8,43 +8,54 @@ export default function Header() {
   console.log(router);
 
   return (
-    <header>
-      <div className="flex flex-col sm:flex-row sm:h-[290px] bg-[#1A1A1A] justify-between">
-        <div className="flex justify-center sm:justify-start w-full sm:w-auto">
-          <Link href="/">
-            <Image
-              src={logo.src}
-              width={400}
-              height={400}
-              alt="imagen logotipo"
-            />
-          </Link>
-        </div>
-        <nav className="text-white no-underline text-2xl uppercase sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px] flex justify-center sm:justify-end ">
-          <Link
-            href="/"
-            className={`mr-6 ${
-              router.pathname === "/" && "border-b-2 border-white"
-            }`}
-          >
-            HOME
-          </Link>
-          <Link
-            href="/articles"
-            className={`mr-6 ${
-              router.pathname === "/articles" && "border-b-2 border-white"
-            }`}
-          >
-            ARTICLES
-          </Link>
-          <Link
-            href="/aboutus"
-            className={`${
-              router.pathname === "/aboutus" && "border-b-2 border-white"
-            }`}
-          >
-            ABOUT US
-          </Link>
+    <header className="flex-row items-center bg-[#1A1A1A] py-4 flex justify-between w-full ">
+      <div className="px-4">
+        <Link href="/">
+          <Image
+            src={logo.src}
+            width={160}
+            height={160}
+            alt="imagen logotipo"
+          />
+        </Link>
+      </div>
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <nav className="text-white text-lg sm:text-2xl uppercase mr-[60px]">
+          <ul className="flex">
+            <li className="mr-4">
+              <Link
+                href="/"
+                className={`${
+                  router.pathname === "/" && "border-b-2 border-white"
+                }`}
+              >
+                HOME
+              </Link>
+            </li>
+            <li className="mr-4">
+              <Link
+                href="/articles"
+                className={`${
+                  router.pathname === "/articles" && "border-b-2 border-white"
+                }`}
+              >
+                ARTICLES
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/aboutus"
+                className={`${
+                  router.pathname === "/aboutus" && "border-b-2 border-white"
+                }`}
+              >
+                ABOUT US
+              </Link>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>

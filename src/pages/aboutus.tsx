@@ -25,7 +25,7 @@ export default function Nosotros() {
                   width={300}
                   height={300}
                   alt="Our Instagram Account"
-                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                  className="mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
                 />
               </Link>
             </div>
@@ -37,7 +37,7 @@ export default function Nosotros() {
                   width={300}
                   height={300}
                   alt="Our Tiktok Account"
-                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                  className="mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
                 />
               </Link>
             </div>
@@ -49,7 +49,7 @@ export default function Nosotros() {
                   width={300}
                   height={300}
                   alt="Our Paypal Account"
-                  className="mx-4 mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
+                  className="mt-8 cursor-pointer transform hover:scale-110 transition duration-500 ease-in-out"
                 />
               </Link>
             </div>
