@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/articles": {
+    "articles": {
       "maxDuration": 10
     }
   }
