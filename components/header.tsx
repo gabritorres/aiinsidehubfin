@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="flex flex-col sm:flex-row sm:h-[340px] bg-[#1A1A1A] justify-between">
+      <div className="flex flex-col sm:flex-row sm:h-[290px] bg-[#1A1A1A] justify-between">
         <div className="flex justify-center sm:justify-start w-full sm:w-auto">
           <Link href="/">
             <Image
@@ -20,14 +20,31 @@ export default function Header() {
             />
           </Link>
         </div>
-        <nav className="text-white no-underline text-2xl uppercase sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px] flex justify-center sm:justify-end">
-          <Link href="/" className="mr-6">
+        <nav className="text-white no-underline text-2xl uppercase sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px] flex justify-center sm:justify-end ">
+          <Link
+            href="/"
+            className={`mr-6 ${
+              router.pathname === "/" && "border-b-2 border-white"
+            }`}
+          >
             HOME
           </Link>
-          <Link href="/articles" className="mr-6">
+          <Link
+            href="/articles"
+            className={`mr-6 ${
+              router.pathname === "/articles" && "border-b-2 border-white"
+            }`}
+          >
             ARTICLES
           </Link>
-          <Link href="/aboutus">ABOUT US</Link>
+          <Link
+            href="/aboutus"
+            className={`${
+              router.pathname === "/aboutus" && "border-b-2 border-white"
+            }`}
+          >
+            ABOUT US
+          </Link>
         </nav>
       </div>
     </header>

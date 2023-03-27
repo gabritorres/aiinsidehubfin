@@ -17,8 +17,9 @@ export default function Nosotros() {
             ABOUT US
           </div>
           <div className="flex flex-row justify-center">
-            <div className="m-[20px]">
-              <Link href="https://www.instagram.com">
+            <div className="m-[30px]">
+              <div className="font-bold mb-2">INSTAGRAM</div>
+              <Link href="https://www.instagram.com" target="_blank">
                 <Image
                   src={fotInsta.src}
                   width={300}
@@ -28,8 +29,9 @@ export default function Nosotros() {
                 />
               </Link>
             </div>
-            <div className="m-[20px]">
-              <Link href="https://www.tiktok.com">
+            <div className="m-[30px]">
+              <div className="font-bold mb-2">TIKTOK</div>
+              <Link href="https://www.tiktok.com" target="_blank">
                 <Image
                   src={fotTik.src}
                   width={300}
@@ -39,8 +41,9 @@ export default function Nosotros() {
                 />
               </Link>
             </div>
-            <div className="m-[20px]">
-              <Link href="https://www.paypal.com">
+            <div className="m-[30px]">
+              <div className="font-bold mb-2">DONATIONS</div>
+              <Link href="https://www.paypal.com" target="_blank">
                 <Image
                   src={paypal.src}
                   width={300}

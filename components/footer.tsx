@@ -14,7 +14,7 @@ export default function Footer() {
           <Link href="/aboutus">ABOUT US</Link>
         </nav>
         <p className="text-white text-2xl uppercase mt-[25px] md:mt-[75px] md:mr-[120px] sm:text-5xl sm:m-2 sm:mt-[150px] sm:mr-[120px]">
-          Todos los derechos reservados {new Date().getFullYear()}
+          ALL RIGHTS RESERVED {new Date().getFullYear()}
         </p>
       </div>
     </footer>

@@ -26,24 +26,31 @@ export default function Articles({ article }: { article: any }) {
     title10,
     text10,
   } = article;
+  const maxCharacters = 200;
+
   console.log("imagen + " + JSON.stringify(image1));
   return (
     <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-black hover:shadow-lg">
-      <Image
-        src={image1?.data?.attributes?.formats?.medium?.url}
-        width={600}
-        height={400}
-        alt={`Imagen ${title}`}
-      />
+      <Link href={`/articles/${url}`} target="_blank">
+        <Image
+          src={image1?.data?.attributes?.formats?.medium?.url}
+          width={600}
+          height={400}
+          alt={`Imagen ${title}`}
+        />
+      </Link>
       <div className="p-4">
-        <h2 className="text-[20px] font-semibold text-gray-900">{title}</h2>
-        <p className="text-gray-700 mt-2">{description}</p>
+        <h2 className="text-2xl font-semibold text-gray-900">{title}</h2>
+        <p className="text-gray-700 mt-2">
+          {description.length > maxCharacters
+            ? `${description.substring(0, maxCharacters)}...`
+            : description}
+        </p>
         <div className="mt-4">
-          <Link
-            href={`/articles/${url}`}
-            className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110"
-          >
-            View
+          <Link href={`/articles/${url}`} passHref target="_blank">
+            <span className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              Read more
+            </span>
           </Link>
         </div>
       </div>
