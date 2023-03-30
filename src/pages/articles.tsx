@@ -28,7 +28,7 @@ export async function getStaticProps() {
     const response = await fetch(`${process.env.API_URL}/articles?populate=*`);
     const articles = await response.json();
     console.log(
-      "--------------------------------------------------------------------------"
+      "------------------------------------------------------------------------"
     );
     console.log(articles);
     return {
