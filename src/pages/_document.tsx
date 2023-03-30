@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Discover the fascinating world of AI"
           />
-          <link rel="icon" type="image/x-icon" href="/img/icono.ico" />
+          <link rel="icon" type="image/x-icon" href="/img/logoFinal.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com/" />
           <link
             rel="preconnect"
@@ -25,6 +25,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
             rel="stylesheet"
           />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
         <body>
           <Main />

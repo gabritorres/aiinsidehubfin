@@ -25,7 +25,7 @@ export default function Articles({ articles }: { articles: any }) {
 }
 
 // export async function getStaticProps() {
-//     const resp =  await fetch(`http://127.0.0.1:1337/api/articulos?populate=imagen`);
+//     const resp =  await fetch(`${process.env.API_URL}/articles?populate=imagen`);
 //     const {data: articulos} = await resp.json();
 //     console.log(articulos)
 
