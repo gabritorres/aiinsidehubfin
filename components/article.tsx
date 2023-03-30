@@ -28,7 +28,6 @@ export default function Articles({ article }: { article: any }) {
   } = article;
   const maxCharacters = 200;
 
-  console.log("imagen + " + JSON.stringify(image1));
   return (
     <div className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-black hover:shadow-lg">
       <Link href={`/articles/${url}`} target="_blank">

@@ -106,8 +106,29 @@ export default function Article({ article }: { article: any }) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({
-  query: { url },
+export async function getStaticPaths() {
+  const respuesta = await fetch(`${process.env.API_URL}/articles`);
+
+  const { data } = await respuesta.json();
+
+  console.log(data);
+
+  const paths = data.map((article: { attributes: { url: any } }) => ({
+    params: {
+      url: article.attributes.url,
+    },
+  }));
+
+  return {
+    fallback: false,
+    paths,
+  };
+}
+
+export const getStaticProps = async ({
+  params: { url },
+}: {
+  params: { url: string };
 }) => {
   const respuesta = await fetch(
     `${process.env.API_URL}/articles/?filters[url]=${url}&populate=*`
@@ -120,3 +141,18 @@ export const getServerSideProps: GetServerSideProps = async ({
     },
   };
 };
+
+// export const getServerSideProps: GetServerSideProps = async ({
+//   query: { url },
+// }) => {
+//   const respuesta = await fetch(
+//     `${process.env.API_URL}/articles/?filters[url]=${url}&populate=*`
+//   );
+//   const { data: article } = await respuesta.json();
+
+//   return {
+//     props: {
+//       article,
+//     },
+//   };
+// };

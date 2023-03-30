@@ -3,7 +3,6 @@ import Layout from "../../components/layout";
 import Articulo from "../../components/article";
 
 export default function Articles({ articles }: { articles: any }) {
-  console.log("art " + articles);
   return (
     <Layout
       title={"Articles"}
@@ -24,25 +23,16 @@ export default function Articles({ articles }: { articles: any }) {
   );
 }
 
-// export async function getStaticProps() {
-//     const resp =  await fetch(`${process.env.API_URL}/articles?populate=imagen`);
-//     const {data: articulos} = await resp.json();
-//     console.log(articulos)
-
-//     return {
-//         props: {articulos},
-//     }
-// }
-
-export async function getServerSideProps() {
+export async function getStaticProps() {
   try {
     const response = await fetch(`${process.env.API_URL}/articles?populate=*`);
     const articles = await response.json();
-    console.log("articulos: ", articles);
+    console.log(
+      "--------------------------------------------------------------------------"
+    );
+    console.log(articles);
     return {
-      props: {
-        articles,
-      },
+      props: { articles },
     };
   } catch (error) {
     console.error("ERROR");
@@ -53,3 +43,23 @@ export async function getServerSideProps() {
     };
   }
 }
+
+// export async function getServerSideProps() {
+//   try {
+//     const response = await fetch(`${process.env.API_URL}/articles?populate=*`);
+//     const articles = await response.json();
+//     console.log("articulos: ", articles);
+//     return {
+//       props: {
+//         articles,
+//       },
+//     };
+//   } catch (error) {
+//     console.error("ERROR");
+//     return {
+//       props: {
+//         error: "Ocurrió un error al cargar los articulos",
+//       },
+//     };
+//   }
+// }
