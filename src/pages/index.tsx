@@ -46,7 +46,7 @@ export default function Home({ articles }: { articles: any }) {
           <span className="text-white transition duration-800 hover:text-orange-400 font-grotesk">
             u
           </span>
-          <span className="text-white transition duration-800 hover:text-[#fb776c]  font-grotesk">
+          <span className="text-white transition duration-800 hover:text-[#fb776c] font-grotesk">
             b
           </span>
         </div>
@@ -69,19 +69,20 @@ export default function Home({ articles }: { articles: any }) {
 
       <div className="flex flex-col border border-8 border-white w-full h-[400px]">
         <div className="flex flex-row border border-8 border-white w-full h-[200px]">
-          <div className="border border-8 border-white w-1/2 h-full">
-            <div>{atributosId1.title}</div>
-            <div>
-              {
-                <Image
-                  src={
-                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
-                  }
-                  width={600}
-                  height={400}
-                  alt={`Imagen ${atributosId1.title}`}
-                />
-              }
+          <div className="relative border border-8 border-white w-1/2 h-full">
+            <div className="absolute top-0 font-grotesk text-[20px] mt-4 hover:underline">
+              {atributosId1.title}
+            </div>
+            <div className="float-right w-1/2 h-full">
+              <Image
+                src={
+                  atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                }
+                width={300}
+                height={200}
+                alt={`Imagen ${atributosId1.title}`}
+                className="transform hover:transform hover:scale-105"
+              />
             </div>
           </div>
           <div className="border border-8 border-white w-1/2 h-full">
