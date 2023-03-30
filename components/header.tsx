@@ -11,12 +11,14 @@ export default function Header() {
     <header className="flex-row items-center bg-[#1A1A1A] py-4 flex justify-between w-full ">
       <div className="px-4">
         <Link href="/">
-          <Image
-            src={logo.src}
-            width={160}
-            height={160}
-            alt="imagen logotipo"
-          />
+          <div className="hover:transform hover:rotate-180 transition duration-500 ease-in-out">
+            <Image
+              src={logo.src}
+              width={160}
+              height={160}
+              alt="imagen logotipo"
+            />
+          </div>
         </Link>
       </div>
       <div>
