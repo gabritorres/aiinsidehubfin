@@ -7,7 +7,11 @@ import fotHome2 from "../../public/img/fotoHome2.svg";
 import fondoHome from "../../public/fondoHome.svg";
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ articles }: { articles: any }) {
+  const objetoConId1 = articles.data.find(
+    (objeto: { id: number }) => objeto.id === 1
+  );
+  const atributosId1 = objetoConId1.attributes;
   return (
     <Layout title={"Home"} description={"Discover the fascinating world of AI"}>
       <div className="" style={{ backgroundImage: `url(${fondoHome.src})` }}>
@@ -62,6 +66,35 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-[3px] w-full"></div>
+
+      <div className="flex flex-col border border-8 border-white w-full h-[400px]">
+        <div className="flex flex-row border border-8 border-white w-full h-[200px]">
+          <div className="border border-8 border-white w-1/2 h-full">
+            <div>{atributosId1.title}</div>
+            <div>
+              {
+                <Image
+                  src={
+                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  width={600}
+                  height={400}
+                  alt={`Imagen ${atributosId1.title}`}
+                />
+              }
+            </div>
+          </div>
+          <div className="border border-8 border-white w-1/2 h-full">
+            <div>TITULO</div>
+            <div>IMAGEN</div>
+          </div>
+        </div>
+        <div className="flex flex-row border border-8 border-white w-full h-[200px]">
+          <div className="border border-8 border-white w-1/2 h-full"></div>
+          <div className="border border-8 border-white w-1/2 h-full"></div>
+        </div>
+      </div>
+
       <div className="flex flex-col  justify-between bg-white ">
         <div className="flex flex-row m-30 bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-black hover:shadow-lg">
           <div className=" mt-40 text-center">
@@ -195,4 +228,25 @@ export default function Home() {
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const response = await fetch(`${process.env.API_URL}/articles?populate=*`);
+    const articles = await response.json();
+    console.log(
+      "------------------------------------------------------------------------"
+    );
+    console.log(articles);
+    return {
+      props: { articles },
+    };
+  } catch (error) {
+    console.error("ERROR");
+    return {
+      props: {
+        error: "Ocurrió un error al cargar los articulos",
+      },
+    };
+  }
 }
