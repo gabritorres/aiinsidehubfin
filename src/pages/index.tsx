@@ -4,49 +4,51 @@ import { Inter } from "next/font/google";
 import Layout from "../../components/layout";
 import fotHome1 from "../../public/img/fotoHome1.svg";
 import fotHome2 from "../../public/img/fotoHome2.svg";
+import fondoHome from "../../public/fondoHome.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <Layout title={"Home"} description={"Discover the fascinating world of AI"}>
-      <div className=" bg-[#1b1d20] bg-gradient-to-r from-indigo-900 from-10% via-sky-900 via-30% to-emerald-900 to-90% pt-50 pb-50">
-        <div className="text-center text-7xl font-extrabold tracking-wider   leading-tight mb-3">
-          <span className="text-white transition duration-800 hover:text-purple-500">
+      <div className="" style={{ backgroundImage: `url(${fondoHome.src})` }}>
+        <div className="text-center text-[180px] font-extrabold tracking-wider leading-tight">
+          <span className="text-white transition duration-800 hover:text-[#f23540] font-grotesk">
             A
           </span>
-          <span className="text-white transition duration-800 hover:text-green-500">
+          <span className="text-white transition duration-800 hover:text-[#f58435] font-grotesk">
+            i
+          </span>
+          <span className="text-white transition duration-800 hover:text-[#f23540] font-grotesk">
             I
           </span>
-          <span className="text-white transition duration-800 hover:text-purple-300">
-            I
+          <span className="text-white transition duration-800 hover:text-yellow-400 font-grotesk">
+            n
           </span>
-          <span className="text-white transition duration-800 hover:text-gray-500">
-            N
+          <span className="text-white transition duration-800 hover:text-[#fb776c] font-grotesk">
+            s
           </span>
-          <span className="text-white transition duration-800 hover:text-blue-500">
-            S
+          <span className="text-white transition duration-800 hover:text-blue-600 font-grotesk">
+            i
           </span>
-          <span className="text-white transition duration-800 hover:text-blue-600">
-            I
+          <span className="text-white transition duration-800 hover:text-[#f58435] font-grotesk">
+            d
           </span>
-          <span className="text-white transition duration-800 hover:text-green-600">
-            D
+          <span className="text-white transition duration-800 hover:text-yellow-400 font-grotesk">
+            e
           </span>
-          <span className="text-white transition duration-800 hover:text-yellow-400">
-            E
-          </span>
-          <span className="text-white transition duration-800 hover:text-blue-400">
+          <span className="text-white transition duration-800 hover:text-[#f23540] font-grotesk">
             H
           </span>
-          <span className="text-white transition duration-800 hover:text-orange-400">
-            U
+          <span className="text-white transition duration-800 hover:text-orange-400 font-grotesk">
+            u
           </span>
-          <span className="text-white transition duration-800 hover:text-purple-500">
-            B
+          <span className="text-white transition duration-800 hover:text-[#fb776c]  font-grotesk">
+            b
           </span>
         </div>
-        <div className="text-center text-3xl font-extrabold tracking-tighter leading-tight mt-1 mb-9">
+        <div className="text-center text-5xl font-extrabold tracking-tighter leading-tight mb- 9">
           <span
+            className="font-grotesk"
             style={{
               backgroundClip: "text",
               WebkitBackgroundClip: "text",
@@ -59,7 +61,7 @@ export default function Home() {
           </span>
         </div>
       </div>
-
+      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-[3px] w-full"></div>
       <div className="flex flex-col  justify-between bg-white ">
         <div className="flex flex-row m-30 bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-black hover:shadow-lg">
           <div className=" mt-40 text-center">
