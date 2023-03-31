@@ -67,32 +67,39 @@ export default function Home({ articles }: { articles: any }) {
       </div>
       <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-[3px] w-full"></div>
 
-      <div className="flex flex-col border border-8 border-white w-full h-[400px]">
-        <div className="flex flex-row border border-8 border-white w-full h-[200px]">
-          <div className="relative border border-8 border-white w-1/2 h-full">
-            <div className="absolute top-0 font-grotesk text-[20px] mt-4 hover:underline">
+      <div className="bg-black flex flex-col border border-8 border-white w-full h-[500px]">
+        <div className="flex justify-center text-5xl">
+          <span className="text-white  transition duration-800  font-grotesk">
+            CHECK OUT OUR
+            <span className="text-[#fb776c] hover:text-yellow-400">
+              {" "}
+              ARTICLES:
+            </span>
+          </span>
+          <span className="text-[#fb776c] transition duration-800 hover:text-white font-grotesk"></span>
+        </div>
+        <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
+        <div className="flex flex-row w-full">
+          <div className="w-1/2 h-full">
+            <div className="bg-black bg-opacity-75 text-white font-bold text-lg py-2 px-3 hover:underline">
               {atributosId1.title}
-            </div>
-            <div className="float-right w-1/2 h-full">
               <Image
                 src={
                   atributosId1.image1?.data?.attributes?.formats?.medium?.url
                 }
-                width={300}
-                height={200}
+                width={600}
+                height={400}
                 alt={`Imagen ${atributosId1.title}`}
-                className="transform hover:transform hover:scale-105"
               />
             </div>
           </div>
-          <div className="border border-8 border-white w-1/2 h-full">
-            <div>TITULO</div>
-            <div>IMAGEN</div>
+          <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-full w-1"></div>
+          <div className="border-r border-white w-1/2 h-full">
+            <div className="w-full h-full">
+              <div>TITULO</div>
+              <div>IMAGEN</div>
+            </div>
           </div>
-        </div>
-        <div className="flex flex-row border border-8 border-white w-full h-[200px]">
-          <div className="border border-8 border-white w-1/2 h-full"></div>
-          <div className="border border-8 border-white w-1/2 h-full"></div>
         </div>
       </div>
 
