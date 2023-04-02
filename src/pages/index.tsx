@@ -80,24 +80,40 @@ export default function Home({ articles }: { articles: any }) {
         </div>
         <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
         <div className="flex flex-row w-full">
-          <div className="w-1/2 h-full">
-            <div className="bg-black bg-opacity-75 text-white font-bold text-lg py-2 px-3 hover:underline">
+          <div className="w-1/2 h-full relative overflow-hidden">
+            <div className="bg-black bg-opacity-75 text-white font-bold text-lg py-2 px-3 hover:underline absolute top-0 left-0 z-10">
               {atributosId1.title}
-              <Image
-                src={
-                  atributosId1.image1?.data?.attributes?.formats?.medium?.url
-                }
-                width={600}
-                height={400}
-                alt={`Imagen ${atributosId1.title}`}
-              />
+            </div>
+            <div className="w-[750px] h-[422px] border border-[10px] border-white">
+              <div className="absolute top-0 right-0 transition-transform duration-500 hover:scale-110 transform mr-[50px]">
+                <Image
+                  src={
+                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  width={750}
+                  height={422}
+                  alt={`Imagen ${atributosId1.title}`}
+                  className="object-cover w-full h-full"
+                  style={{ objectFit: "cover", maxWidth: "750px" }} // agregar maxWidth
+                />
+              </div>
             </div>
           </div>
           <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-full w-1"></div>
-          <div className="border-r border-white w-1/2 h-full">
-            <div className="w-full h-full">
-              <div>TITULO</div>
-              <div>IMAGEN</div>
+          <div className="w-1/2 h-full">
+            <div className="bg-black bg-opacity-75 text-white font-bold text-lg py-2 px-3 hover:underline">
+              {atributosId1.title}
+              <div className="relative">
+                <Image
+                  src={
+                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  width={600}
+                  height={400}
+                  alt={`Imagen ${atributosId1.title}`}
+                  className="transform transition-transform duration-500 hover:scale-125"
+                />
+              </div>
             </div>
           </div>
         </div>
