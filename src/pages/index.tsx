@@ -8,6 +8,11 @@ import fondoHome from "../../public/fondoHome.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ articles }: { articles: any }) {
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
+    crossOrigin="anonymous"
+  ></script>;
   const objetoConId1 = articles.data.find(
     (objeto: { id: number }) => objeto.id === 1
   );
@@ -93,47 +98,50 @@ export default function Home({ articles }: { articles: any }) {
           </span>
         </div>
         <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
-        <div className="flex flex-col md:flex-row w-full justify-center items-center md:justify-around mb-8 mt-8">
-          <div className="relative overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="bg-black bg-opacity-75 text-white font-bold text-lg hover:underline absolute top-0 left-0 z-20">
+        <div className="relative flex flex-col md:flex-row w-full justify-center items-center md:justify-around mb-8 mt-8 ml-[100px]">
+          <div className="relative">
+            <div className="absolute text-white font-bold text-3xl hover:underline absolute top-0 left-0 w-[400px] z-20 uppercase">
               {atributosId1.title}
             </div>
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId1.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId1.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId1.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
-
-          <div className="relative overflow-hidden mt-4 md:mt-0 md:ml-10">
-            <div className="bg-black bg-opacity-75 text-white font-bold text-lg hover:underline absolute top-0 left-0 z-10">
+          <div className="relative">
+            <div className="absolute text-white font-bold text-3xl hover:underline top-0 left-0 w-[400px] z-20 uppercase">
               {atributosId2.title}
             </div>
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId2.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId2.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId2.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId2.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
         </div>
         <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
         <div className="flex flex-col md:flex-row w-full justify-center items-center md:justify-around mb-8 mt-8">
+          <div className="relative text-white font-bold text-lg hover:underline absolute w-1/10 top-0 left-0 z-20">
+            {atributosId3.title}
+          </div>
           <div className="relative overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="bg-black bg-opacity-75 text-white font-bold text-lg hover:underline absolute top-0 left-0 z-20">
-              {atributosId3.title}
-            </div>
             <div className="max-w-full max-h-full duration-500 hover:scale-150">
               <img
                 src={
@@ -147,11 +155,10 @@ export default function Home({ articles }: { articles: any }) {
           </div>
 
           <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
-
+          <div className="relative text-white font-bold text-lg hover:underline absolute top-0 left-0 z-10">
+            {atributosId4.title}
+          </div>
           <div className="relative overflow-hidden mt-4 md:mt-0 md:ml-10">
-            <div className="bg-black bg-opacity-75 text-white font-bold text-lg hover:underline absolute top-0 left-0 z-10">
-              {atributosId4.title}
-            </div>
             <div className="max-w-full max-h-full duration-500 hover:scale-150">
               <img
                 src={

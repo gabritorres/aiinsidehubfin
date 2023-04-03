@@ -6,6 +6,11 @@ import fotTik from "../../public/img/fotTik.svg";
 import paypal from "../../public/img/fotPaypal.webp";
 
 export default function Nosotros() {
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
+    crossOrigin="anonymous"
+  ></script>;
   return (
     <Layout
       title={"About Us"}
@@ -19,7 +24,10 @@ export default function Nosotros() {
           <div className="flex flex-row justify-center">
             <div className="m-[30px]">
               <div className="font-bold mb-2 text-black">INSTAGRAM</div>
-              <Link href="https://www.instagram.com" target="_blank">
+              <Link
+                href="https://www.instagram.com/aiinsidehub/"
+                target="_blank"
+              >
                 <Image
                   src={fotInsta.src}
                   width={300}
@@ -31,7 +39,7 @@ export default function Nosotros() {
             </div>
             <div className="m-[30px]">
               <div className="font-bold mb-2 text-black">TIKTOK</div>
-              <Link href="https://www.tiktok.com" target="_blank">
+              <Link href="https://www.tiktok.com/@aiinsidehub" target="_blank">
                 <Image
                   src={fotTik.src}
                   width={300}

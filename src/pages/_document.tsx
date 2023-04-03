@@ -30,6 +30,11 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap"
             rel="stylesheet"
           ></link>
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
+            crossOrigin="anonymous"
+          ></script>
         </Head>
         <body className="bg-[#1b1d20]">
           <Main />
