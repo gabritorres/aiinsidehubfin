@@ -8,8 +8,8 @@ export default function Header() {
   console.log(router);
 
   return (
-    <header className="flex justify-between items-center bg-[#1b1d20] h-12 py-4 px-6 relative font-grotesk text-white">
-      <div className="flex-1 flex justify-end">
+    <header className="flex flex-col sm:flex-row justify-between items-center bg-[#1b1d20] h-auto sm:h-12 py-4 px-6 relative font-grotesk text-white">
+      <div className="flex-1 flex justify-center sm:justify-end">
         <div className="mr-4 sm:mr-10 lg:mr-20">
           <Link
             href="/"
@@ -31,6 +31,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
+
       <div className="relative top-4">
         <div className="rounded-full h-16 w-16 flex justify-center items-center">
           <Link href="/">
@@ -45,7 +46,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex-1 flex ">
+      <div className="flex-1 flex justify-center sm:justify-start mt-4 sm:mt-0">
         <div className="mr-4 sm:mr-10 lg:mr-20 sm:ml-10 lg:ml-20">
           <Link
             href="/aboutus"
