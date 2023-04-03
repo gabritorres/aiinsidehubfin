@@ -99,103 +99,105 @@ export default function Home({ articles }: { articles: any }) {
         </div>
         <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
         <div className="relative flex flex-col md:flex-row w-full justify-beetween items-center md:justify-around mb-8 mt-8">
-          <div
-            className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
-            style={{
-              textShadow:
-                "2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black",
-            }}
-          >
-            {atributosId2.title}
+          <div className="relative ml-[20px] mr-[20px]">
+            <div
+              className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
+              style={{
+                textShadow:
+                  "2px 2px black, -2px -2px black, 2px -2px black, -1px 1px black",
+              }}
+            >
+              {atributosId1.title}
+            </div>
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId1.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId1.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </div>
           </div>
-          <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId1.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId1.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+
+          <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
+
+          <div className="relative ml-[20px] mr-[20px]">
+            <div
+              className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
+              style={{
+                textShadow:
+                  "2px 2px black, -2px -2px black, 2px -2px black, -1px 1px black",
+              }}
+            >
+              {atributosId2.title}
+            </div>
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId2.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId2.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
-
-        <div className="relative ml-[20px] mr-[20px]">
-          <div
-            className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
-            style={{
-              textShadow:
-                "2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black",
-            }}
-          >
-            {atributosId2.title}
-          </div>
-          <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId2.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId2.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+        <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+        <div className="relative flex flex-col md:flex-row w-full justify-beetween items-center md:justify-around mb-8 mt-8">
+          <div className="relative ml-[20px] mr-[20px]">
+            <div
+              className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
+              style={{
+                textShadow:
+                  "2px 2px black, -2px -2px black, 2px -2px black, -1px 1px black",
+              }}
+            >
+              {atributosId3.title}
+            </div>
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId3.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId3.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
-      <div className="relative flex flex-col md:flex-row w-full justify-beetween items-center md:justify-around mb-8 mt-8">
-        <div className="relative ml-[20px] mr-[20px]">
-          <div
-            className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
-            style={{
-              textShadow:
-                "2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black",
-            }}
-          >
-            {atributosId3.title}
-          </div>
-          <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId3.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId3.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+          <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
+          <div className="relative ml-[20px] mr-[20px]">
+            <div
+              className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
+              style={{
+                textShadow:
+                  "2px 2px black, -2px -2px black, 2px -2px black, -1px 1px black",
+              }}
+            >
+              {atributosId4.title}
             </div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
-        <div className="relative ml-[20px] mr-[20px]">
-          <div
-            className="text-white font-bold hover:underline md:absolute md:-ml-[10%] md:w-[600px] w-full z-20 uppercase sm:text-xl md:text-3xl sm:mx-4"
-            style={{
-              textShadow:
-                "2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black",
-            }}
-          >
-            {atributosId4.title}
-          </div>
-          <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
-            <div className="max-w-full max-h-full duration-500 hover:scale-150">
-              <img
-                src={
-                  atributosId4.image1?.data?.attributes?.formats?.medium?.url
-                }
-                alt={`Imagen ${atributosId4.title}`}
-                className="object-cover w-full h-full border rounded-[40px] border-black z-8"
-                style={{ objectFit: "cover" }}
-              />
+            <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <img
+                  src={
+                    atributosId4.image1?.data?.attributes?.formats?.medium?.url
+                  }
+                  alt={`Imagen ${atributosId4.title}`}
+                  className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             </div>
           </div>
         </div>
