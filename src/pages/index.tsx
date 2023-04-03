@@ -26,60 +26,63 @@ export default function Home({ articles }: { articles: any }) {
   const atributosId4 = objetoConId4.attributes;
   return (
     <Layout title={"Home"} description={"Discover the fascinating world of AI"}>
-      <div className="" style={{ backgroundImage: `url(${fondoHome.src})` }}>
-        <div className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold tracking-wider leading-tight">
-          <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
-            A
-          </span>
-          <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
-            i
-          </span>
-          <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
-            I
-          </span>
-          <span className="text-white transition duration-800 hover:text-green-500 font-grotesk">
-            n
-          </span>
-          <span className="text-white transition duration-800 hover:text-blue-500 font-grotesk">
-            s
-          </span>
-          <span className="text-white transition duration-800 hover:text-indigo-500 font-grotesk">
-            i
-          </span>
-          <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
-            d
-          </span>
-          <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
-            e
-          </span>
-          <span className="text-white transition duration-800 hover:text-green-500 font-grotesk">
-            H
-          </span>
-          <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
-            u
-          </span>
-          <span className="text-white transition duration-800 hover:text-blue-500 font-grotesk">
-            b
-          </span>
-        </div>
-        <div className="text-center text-3xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-9">
-          <span
-            className="font-grotesk"
-            style={{
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-              backgroundImage:
-                "linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8)",
-            }}
-          >
-            Discover The Power of The AI
-          </span>
+      <div className="bg-[#1b1d20]">
+        <div className="" style={{ backgroundImage: `url(${fondoHome.src})` }}>
+          <div className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold tracking-wider leading-tight">
+            <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
+              A
+            </span>
+            <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
+              i
+            </span>
+            <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
+              I
+            </span>
+            <span className="text-white transition duration-800 hover:text-green-500 font-grotesk">
+              n
+            </span>
+            <span className="text-white transition duration-800 hover:text-blue-500 font-grotesk">
+              s
+            </span>
+            <span className="text-white transition duration-800 hover:text-indigo-500 font-grotesk">
+              i
+            </span>
+            <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
+              d
+            </span>
+            <span className="text-white transition duration-800 hover:text-red-500 font-grotesk">
+              e
+            </span>
+            <span className="text-white transition duration-800 hover:text-green-500 font-grotesk">
+              H
+            </span>
+            <span className="text-white transition duration-800 hover:text-yellow-500 font-grotesk">
+              u
+            </span>
+            <span className="text-white transition duration-800 hover:text-blue-500 font-grotesk">
+              b
+            </span>
+          </div>
+          <div className="text-center text-3xl md:text-5xl font-extrabold tracking-tighter leading-tight mb-9">
+            <span
+              className="font-grotesk"
+              style={{
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+                backgroundImage:
+                  "linear-gradient(to right, #4e54c8, #8f94fb, #4e54c8)",
+              }}
+            >
+              Discover The Power of The AI
+            </span>
+          </div>
         </div>
       </div>
+
       <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
 
-      <div className="bg-black flex flex-col w-full h-full">
+      <div className="bg-[#1b1d20] flex flex-col w-full h-full bg-[#1b1d20]">
         <div className="flex justify-center text-4xl md:text-5xl mt-4 mb-4">
           <span className="text-white transition duration-800 font-grotesk">
             CHECK OUT OUR

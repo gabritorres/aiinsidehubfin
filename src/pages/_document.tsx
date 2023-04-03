@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body>
+        <body className="bg-[#1b1d20]">
           <Main />
           <NextScript />
         </body>
