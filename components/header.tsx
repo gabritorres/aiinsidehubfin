@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center bg-[#1b1d20] h-12 py-4 px-6 relative font-grotesk text-white">
       <div className="flex-1 flex justify-end">
-        <div className="mr-[70px]">
+        <div className="mr-4 sm:mr-10 lg:mr-20">
           <Link
             href="/"
             className={`${
@@ -20,7 +20,7 @@ export default function Header() {
             Home
           </Link>
         </div>
-        <div className="mr-[70px]">
+        <div className="mr-4 sm:mr-10 lg:mr-20">
           <Link
             href="/articles"
             className={`${
@@ -46,24 +46,22 @@ export default function Header() {
       </div>
 
       <div className="flex-1 flex ">
-        <div className="mr-[70px] ml-[70px]">
+        <div className="mr-4 sm:mr-10 lg:mr-20 sm:ml-10 lg:ml-20">
           <Link
             href="/aboutus"
             className={`${
-              router.pathname === "/aboutus" &&
-              "border-b-2 border-white mr-[50px]"
+              router.pathname === "/aboutus" && "border-b-2 border-white"
             } hover:text-[#f23540]`}
           >
             About us
           </Link>
         </div>
 
-        <div className="mr-[50px]">
+        <div className="mr-4 sm:mr-10 lg:mr-20">
           <Link
             href="/aboutus"
             className={`${
-              router.pathname === "/contact" &&
-              "border-b-2 border-white mr-[50px]"
+              router.pathname === "/contact" && "border-b-2 border-white"
             } hover:text-[#f23540]`}
           >
             Contact
