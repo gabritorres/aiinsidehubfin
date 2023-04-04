@@ -149,7 +149,7 @@ export default function Home({ articles }: { articles: any }) {
                 </div>
               </div>
               <div
-                className="hidden sm:block text-white font-bold hover:underline z-20 uppercase sm:text-xl md:text-2xl sm:mx-4"
+                className="hidden sm:block text-white font-bold hover:underline z-21 uppercase sm:text-xl md:text-2xl sm:mx-4"
                 style={{
                   textShadow:
                     "2px 2px black, -2px -2px black, 2px -2px black, -1px 1px black",
