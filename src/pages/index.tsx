@@ -85,7 +85,7 @@ export default function Home({ articles }: { articles: any }) {
       <div className="bg-[#1b1d20] flex flex-row justify-beetween w-full h-full bg-[#1b1d20]">
         <div className="w-0 md:w-1/5"> </div>
         <div className="">
-          <div className="flex justify-center text-4xl md:text-5xl mt-4 mb-4">
+          <div className="flex justify-center mx-auto text-4xl md:text-5xl mt-4 mb-4 text-center">
             <span className="text-white transition duration-800 font-grotesk">
               CHECK OUT OUR
               <span className="text-[#fb776c] hover:text-yellow-400">
