@@ -10,7 +10,7 @@ export default function Articles({ articles }: { articles: any }) {
         "Explore in-depth the latest trends in artificial intelligence"
       }
     >
-      <main className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+      <main className="mt-[30px] container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ">
         {articles ? (
           articles.data.map((article: { id: string; attributes: any }) => (
             <Articulo key={article.id} article={article.attributes} />
@@ -19,6 +19,7 @@ export default function Articles({ articles }: { articles: any }) {
           <p>Cargando...</p>
         )}
       </main>
+      <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
     </Layout>
   );
 }

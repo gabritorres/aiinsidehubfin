@@ -227,6 +227,7 @@ export default function Home({ articles }: { articles: any }) {
         </div>
         <div className="w-0 md:w-1/5"> </div>
       </div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
     </Layout>
   );
 }
