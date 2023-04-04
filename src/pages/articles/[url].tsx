@@ -35,11 +35,11 @@ export default function Article({ article }: { article: any }) {
   return (
     <Layout title={`Article ${title}`}>
       <div className="flex flex-col w-full md:w-1/2 mx-auto">
-        <div className="mt-[30px] text-4xl md:text-4xl font-extrabold uppercase text-center text-justify-center">
+        <div className="mt-[30px] text-white text-4xl md:text-4xl font-extrabold uppercase text-center text-justify-center">
           {title}
         </div>
         <br />
-        <div className="mt-[30px] text-lg md:text-xl text-justify px-6 md:px-0">
+        <div className="mt-[30px] text-white text-lg md:text-xl text-justify px-6 md:px-0">
           {description}
         </div>
         <br />
@@ -55,7 +55,7 @@ export default function Article({ article }: { article: any }) {
         <br />
       </div>
 
-      <div className="mt-[30px] flex flex-col w-full md:w-1/2 mx-auto px-6 md:px-0">
+      <div className="mt-[30px] text-white flex flex-col w-full md:w-1/2 mx-auto px-6 md:px-0">
         <div className="text-2xl font-bold text-justify">{title2}</div>
         <br />
         <div className="text-lg text-justify">{text2}</div>
