@@ -38,8 +38,10 @@ function cookieBanner() {
                 className="z-10"
               />
             </div>
-            <h3 className="text-lg font-bold">Cookies</h3>
-            <p className="">
+            <h3 className="text-lg font-bold sm:text-xl md:text-2xl">
+              Cookies
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg ">
               We use our own and third-party cookies to improve our services.
             </p>
             <button
