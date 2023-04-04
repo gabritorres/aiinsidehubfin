@@ -5,11 +5,6 @@ import Layout from "../../../components/layout";
 import { GetServerSideProps } from "next";
 
 export default function Article({ article }: { article: any }) {
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
-    crossOrigin="anonymous"
-  ></script>;
   if (!article) {
     return <div>Loading...</div>; // or some other error handling behavior
   }

@@ -19,13 +19,20 @@ export default function Layout({
       <Head>
         <title>{`AInsideHub - ${title}`}</title>
         <meta name="description" content={description}></meta>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
+          crossOrigin="anonymous"
+        ></script>
+        ;
       </Head>
       <Header />
-      {children}
+
       {posthog.has_opted_in_capturing() ||
       posthog.has_opted_out_capturing() ? null : (
         <CookieBanner />
       )}
+      {children}
       <Footer />
     </>
   );

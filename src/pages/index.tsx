@@ -8,11 +8,6 @@ import fondoHome from "../../public/fondoHome.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ articles }: { articles: any }) {
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
-    crossOrigin="anonymous"
-  ></script>;
   const objetoConId1 = articles.data.find(
     (objeto: { id: number }) => objeto.id === 1
   );

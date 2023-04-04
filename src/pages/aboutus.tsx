@@ -6,11 +6,6 @@ import fotTik from "../../public/img/fotTik.svg";
 import paypal from "../../public/img/fotPaypal.webp";
 
 export default function Nosotros() {
-  <script
-    async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2068007191150725"
-    crossOrigin="anonymous"
-  ></script>;
   return (
     <Layout
       title={"About Us"}
