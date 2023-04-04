@@ -4,44 +4,46 @@ import { useRouter } from "next/router";
 export default function Footer() {
   const router = useRouter();
   return (
-    <footer className="bg-[#1A1A1A] py-4">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-        <nav className="text-white text-lg md:text-2xl uppercase mb-4 md:mb-0">
-          <ul className="flex flex-col md:flex-row md:justify-center">
-            <li className="mr-4 md:mr-6">
-              <Link
-                href="/"
-                className={`${
-                  router.pathname === "/" && "border-b-2 border-white"
-                }`}
-              >
-                HOME
-              </Link>
-            </li>
-            <li className="mr-4 md:mr-6">
-              <Link
-                href="/articles"
-                className={`${
-                  router.pathname === "/articles" && "border-b-2 border-white"
-                }`}
-              >
-                ARTICLES
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/aboutus"
-                className={`${
-                  router.pathname === "/aboutus" && "border-b-2 border-white"
-                }`}
-              >
-                ABOUT US
-              </Link>
-            </li>
-          </ul>
+    <footer className="flex flex-col sm:flex-row bg-[#1b1d20] h-auto sm:h-12 py-4 px-6 relative font-grotesk text-white">
+      <div className="flex-1 flex items-center justify-center sm:justify-start">
+        <nav className="flex space-x-4">
+          <Link
+            href="/"
+            className={`${
+              router.pathname === "/" && "border-b-2 border-white"
+            } hover:text-[#f23540]`}
+          >
+            Home
+          </Link>
+          <Link
+            href="/articles"
+            className={`${
+              router.pathname === "/articles" && "border-b-2 border-white"
+            } hover:text-[#f23540]`}
+          >
+            Articles
+          </Link>
+          <Link
+            href="/aboutus"
+            className={`${
+              router.pathname === "/aboutus" && "border-b-2 border-white"
+            } hover:text-[#f23540]`}
+          >
+            About us
+          </Link>
+          <Link
+            href="/aboutus"
+            className={`${
+              router.pathname === "/contact" && "border-b-2 border-white"
+            } hover:text-[#f23540]`}
+          >
+            Contact
+          </Link>
         </nav>
-        <p className="text-white text-lg md:text-2xl uppercase mt-4 md:mt-0">
-          ALL RIGHTS RESERVED {new Date().getFullYear()}
+      </div>
+      <div className="flex-1 flex items-center justify-end">
+        <p className="text-white text-lg md:text-2xl uppercase">
+          © {new Date().getFullYear()} ALL RIGHTS RESERVED
         </p>
       </div>
     </footer>

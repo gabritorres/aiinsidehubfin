@@ -32,7 +32,7 @@ export default function Layout({
       posthog.has_opted_out_capturing() ? null : (
         <CookieBanner />
       )}
-      {children}
+      <div className="bg-[#1b1d20]">{children}</div>
       <Footer />
     </>
   );
