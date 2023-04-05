@@ -8,20 +8,25 @@ import fondoHome from "../../public/fondoHome.svg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ articles }: { articles: any }) {
+  const ids = Object.keys(articles.data)
+    .map(Number)
+    .sort((a: number, b: number) => b - a);
+
+  console.log(ids);
   const objetoConId1 = articles.data.find(
-    (objeto: { id: number }) => objeto.id === 1
+    (objeto: { id: number }) => objeto.id === ids[0] + 1
   );
   const atributosId1 = objetoConId1.attributes;
   const objetoConId2 = articles.data.find(
-    (objeto: { id: number }) => objeto.id === 2
+    (objeto: { id: number }) => objeto.id === ids[1] + 1
   );
   const atributosId2 = objetoConId2.attributes;
   const objetoConId3 = articles.data.find(
-    (objeto: { id: number }) => objeto.id === 3
+    (objeto: { id: number }) => objeto.id === ids[2] + 1
   );
   const atributosId3 = objetoConId3.attributes;
   const objetoConId4 = articles.data.find(
-    (objeto: { id: number }) => objeto.id === 4
+    (objeto: { id: number }) => objeto.id === ids[3] + 1
   );
   const atributosId4 = objetoConId4.attributes;
 
