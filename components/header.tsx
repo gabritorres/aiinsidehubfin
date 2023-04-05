@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../public/img/logoFinal.png";
+import logo from "../public/img/logoCircular.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -34,16 +34,18 @@ export default function Header() {
         </div>
 
         <div className="relative top-4">
-          <div className="rounded-full h-16 w-16 flex justify-center items-center">
-            <Link href="/">
-              <Image
-                src={logo.src}
-                width={300}
-                height={300}
-                alt="imagen logotipo"
-                className="z-10"
-              />
-            </Link>
+          <div className="h-16 w-16 relative">
+            <div
+              className="absolute inset-0 bg-gradient-to-r from-[#4A148C] via-[#7B1FA2] to-[#9C27B0] rounded-full animate-spin"
+              style={{ height: "100%", width: "100%" }}
+            ></div>
+            <Image
+              src={logo.src}
+              width={300}
+              height={300}
+              alt="imagen logotipo"
+              className="z-10 absolute top-0 left-0 right-0 bottom-0 m-auto"
+            />
           </div>
         </div>
 
