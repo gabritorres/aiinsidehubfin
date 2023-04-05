@@ -118,7 +118,7 @@ export default function Article({
         <br />
       </div>
 
-      <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+      <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
 
       <div className="flex justify-center text-4xl md:text-5xl mt-4 mb-4">
         <span className="text-white transition duration-800 font-grotesk">
@@ -129,7 +129,7 @@ export default function Article({
           </span>
         </span>
       </div>
-      <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-[3px] w-full"></div>
       <div className="grid grid-cols-4 gap-4 mt-8">
         <div>
           {column1.map((articlee: any) => (
@@ -224,6 +224,7 @@ export default function Article({
           ))}
         </div>
       </div>
+      <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
     </Layout>
   );
 }

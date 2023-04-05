@@ -8,7 +8,7 @@ export default function Header() {
   console.log(router);
 
   return (
-    <header>
+    <header className="fixed inset-x-0 top-0 bg-gray-800 text-white">
       <div className="flex flex-col sm:flex-row justify-between items-center bg-[#1b1d20] h-auto sm:h-12 py-4 px-6 relative font-grotesk text-white">
         <div className="flex-1 flex justify-center sm:justify-end">
           <div className="mr-4 sm:mr-10 lg:mr-20">
@@ -36,7 +36,7 @@ export default function Header() {
         <div className="relative top-4">
           <div className="h-16 w-16 relative">
             <div
-              className="absolute inset-0 bg-gradient-to-r from-[#4A148C] via-[#7B1FA2] to-[#9C27B0] rounded-full animate-spin"
+              className="absolute inset-0 bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] rounded-full animate-spin"
               style={{ height: "100%", width: "100%" }}
             ></div>
             <Image
@@ -73,7 +73,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
     </header>
   );
 }

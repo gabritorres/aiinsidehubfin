@@ -80,7 +80,7 @@ export default function Home({ articles }: { articles: any }) {
           </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
       <div className="bg-[#1b1d20] flex flex-row justify-beetween w-full h-full bg-[#1b1d20]">
         <div className="w-0 md:w-1/5"> </div>
         <div className="">
@@ -93,7 +93,7 @@ export default function Home({ articles }: { articles: any }) {
               </span>
             </span>
           </div>
-          <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
+          <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
           <div className="relative flex flex-col md:flex-row w-full md:justify-beetween items-center md:justify-around mb-8 mt-8">
             <div className="ml-[20px] mr-[20px] w-full md:w-8/12">
               <div className="relative md:ml-[100px] lg:ml-[200px] md:w-3/4">
@@ -122,7 +122,7 @@ export default function Home({ articles }: { articles: any }) {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
+            <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
 
             <div className="relative flex flex-col ml-[20px] md:ml-[60px] mr-[20px] w-full md:w-4/12">
               <div
@@ -159,7 +159,7 @@ export default function Home({ articles }: { articles: any }) {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+          <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
 
           <div className="relative flex flex-col md:flex-row w-full justify-beetween items-center md:justify-around mb-8 mt-8">
             <div className="relative flex flex-col ml-[20px] md:ml-[60px] mr-[20px] w-full md:w-4/12">
@@ -196,7 +196,7 @@ export default function Home({ articles }: { articles: any }) {
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
+            <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-[3px] md:h-[342px] w-full md:w-[3px] md:ml-10 md:mr-10"></div>
             <div className="ml-[20px] mr-[20px] w-full md:w-8/12">
               <div className="relative md:ml-[100px] lg:ml-[200px] md:w-3/4">
                 <div
@@ -227,7 +227,7 @@ export default function Home({ articles }: { articles: any }) {
         </div>
         <div className="w-0 md:w-1/5"> </div>
       </div>
-      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
     </Layout>
   );
 }
