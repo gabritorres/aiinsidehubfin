@@ -36,7 +36,7 @@ export default function Header() {
         <div className="relative top-4">
           <div className="h-16 w-16 relative">
             <div
-              className="absolute inset-0 bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] rounded-full animate-spin"
+              className="absolute inset-0 bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] rounded-full animate-[spin_4s_linear_infinite]"
               style={{ height: "100%", width: "100%" }}
             ></div>
             <Image
