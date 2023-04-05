@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../public/img/logoCircular.png";
+import logo from "../public/img/logoCircularTransparente.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
