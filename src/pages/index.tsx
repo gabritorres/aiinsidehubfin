@@ -106,17 +106,18 @@ export default function Home({ articles }: { articles: any }) {
                 >
                   {atributosId1.title}
                 </div>
-                <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px]">
-                  <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px] border border-2 rounded-[40px] border-white z-8">
+                  <div className="max-w-full max-h-full duration-500 hover:scale-150 ">
                     <img
                       src={
                         atributosId1.image1?.data?.attributes?.formats?.medium
                           ?.url
                       }
                       alt={`Imagen ${atributosId1.title}`}
-                      className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                      className="object-cover w-full h-full "
                       style={{ objectFit: "cover" }}
                     />
+                    <div className="absolute inset-0 z-10 rounded-[40px] hover:box-shadow-[0 0 0 2px black] duration-500"></div>
                   </div>
                 </div>
               </div>
@@ -134,7 +135,8 @@ export default function Home({ articles }: { articles: any }) {
               >
                 {atributosId2.title}
               </div>
-              <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div></div>
+              <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 border border-2 rounded-[40px] border-white s z-8">
                 <div className="max-w-full max-h-full duration-500 hover:scale-150">
                   <img
                     src={
@@ -142,7 +144,7 @@ export default function Home({ articles }: { articles: any }) {
                         ?.url
                     }
                     alt={`Imagen ${atributosId2.title}`}
-                    className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                    className="object-cover w-full h-full"
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -172,7 +174,7 @@ export default function Home({ articles }: { articles: any }) {
               >
                 {atributosId3.title}
               </div>
-              <div className="overflow-hidden mb-4 md:mb-0 md:mr-10">
+              <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 border border-2 rounded-[40px] border-white z-8">
                 <div className="max-w-full max-h-full duration-500 hover:scale-150">
                   <img
                     src={
@@ -180,7 +182,7 @@ export default function Home({ articles }: { articles: any }) {
                         ?.url
                     }
                     alt={`Imagen ${atributosId3.title}`}
-                    className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                    className="object-cover w-full h-full"
                     style={{ objectFit: "cover" }}
                   />
                 </div>
@@ -208,7 +210,7 @@ export default function Home({ articles }: { articles: any }) {
                 >
                   {atributosId4.title}
                 </div>
-                <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px]">
+                <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px] border border-2 rounded-[40px] border-white z-8">
                   <div className="max-w-full max-h-full duration-500 hover:scale-150">
                     <img
                       src={
@@ -216,7 +218,7 @@ export default function Home({ articles }: { articles: any }) {
                           ?.url
                       }
                       alt={`Imagen ${atributosId4.title}`}
-                      className="object-cover w-full h-full border rounded-[40px] border-black z-8"
+                      className="object-cover w-full h-full"
                       style={{ objectFit: "cover" }}
                     />
                   </div>

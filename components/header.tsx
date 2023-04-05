@@ -8,7 +8,7 @@ export default function Header() {
   console.log(router);
 
   return (
-    <header className="fixed inset-x-0 top-0 bg-gray-800 text-white">
+    <header className="fixed inset-x-0 top-0 bg-gray-800 text-white z-50">
       <div className="flex flex-col sm:flex-row justify-between items-center bg-[#1b1d20] h-auto sm:h-12 py-4 px-6 relative font-grotesk text-white">
         <div className="flex-1 flex justify-center sm:justify-end">
           <div className="mr-4 sm:mr-10 lg:mr-20">
