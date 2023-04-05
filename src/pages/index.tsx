@@ -24,6 +24,7 @@ export default function Home({ articles }: { articles: any }) {
     (objeto: { id: number }) => objeto.id === 4
   );
   const atributosId4 = objetoConId4.attributes;
+
   return (
     <Layout title={"Home"} description={"Discover the fascinating world of AI"}>
       <div className="bg-[#1b1d20]">
@@ -79,9 +80,7 @@ export default function Home({ articles }: { articles: any }) {
           </div>
         </div>
       </div>
-
       <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
-
       <div className="bg-[#1b1d20] flex flex-row justify-beetween w-full h-full bg-[#1b1d20]">
         <div className="w-0 md:w-1/5"> </div>
         <div className="">
@@ -161,6 +160,7 @@ export default function Home({ articles }: { articles: any }) {
           </div>
 
           <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+
           <div className="relative flex flex-col md:flex-row w-full justify-beetween items-center md:justify-around mb-8 mt-8">
             <div className="relative flex flex-col ml-[20px] md:ml-[60px] mr-[20px] w-full md:w-4/12">
               <div

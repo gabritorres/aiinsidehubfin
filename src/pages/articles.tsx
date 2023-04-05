@@ -19,6 +19,7 @@ export default function Articles({ articles }: { articles: any }) {
           <p>Cargando...</p>
         )}
       </main>
+      z
     </Layout>
   );
 }
@@ -30,7 +31,7 @@ export async function getStaticProps() {
     console.log(
       "------------------------------------------------------------------------"
     );
-    console.log(articles);
+    //console.log(articles);
     return {
       props: { articles },
     };

@@ -4,7 +4,22 @@ import styles2 from "src/styles/guitarras.module.css";
 import Layout from "../../../components/layout";
 import { GetServerSideProps } from "next";
 
-export default function Article({ article }: { article: any }) {
+import Link from "next/link";
+export default function Article({
+  article,
+  articles,
+}: {
+  article: any;
+  articles: any;
+}) {
+  const numArticles = articles.data.lenght;
+  const randomArticles = articles.data.slice(-8).reverse();
+
+  // divide los 8 artículos en 2 columnas
+  const column1 = randomArticles.slice(0, 2);
+  const column2 = randomArticles.slice(2, 4);
+  const column3 = randomArticles.slice(4, 6);
+  const column4 = randomArticles.slice(6, 8);
   if (!article) {
     return <div>Loading...</div>; // or some other error handling behavior
   }
@@ -102,6 +117,112 @@ export default function Article({ article }: { article: any }) {
         <br />
         <br />
       </div>
+
+      <div className="bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
+      <div className="flex justify-center text-4xl md:text-5xl mt-4 mb-4">
+        <span className="text-white transition duration-800 font-grotesk">
+          RECOMENDED
+          <span className="text-[#fb776c] hover:text-yellow-400">
+            {" "}
+            ARTICLES:
+          </span>
+        </span>
+      </div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-[#fb776c] via-[#fb776c] to-[#1b1d20] h-[3px] w-full"></div>
+      <div className="grid grid-cols-4 gap-4 mt-8">
+        <div>
+          {column1.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div>
+          {column2.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div>
+          {column3.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div>
+          {column4.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
     </Layout>
   );
 }
@@ -130,16 +251,29 @@ export const getStaticProps = async ({
 }: {
   params: { url: string };
 }) => {
-  const respuesta = await fetch(
-    `${process.env.API_URL}/articles/?filters[url]=${url}&populate=*`
-  );
-  const { data: article } = await respuesta.json();
+  try {
+    const response = await fetch(`${process.env.API_URL}/articles?populate=*`);
+    const articles = await response.json();
+    console.log(articles);
+    const respuesta = await fetch(
+      `${process.env.API_URL}/articles/?filters[url]=${url}&populate=*`
+    );
+    const { data: article } = await respuesta.json();
 
-  return {
-    props: {
-      article,
-    },
-  };
+    return {
+      props: {
+        articles,
+        article,
+      },
+    };
+  } catch (error) {
+    console.error("ERROR");
+    return {
+      props: {
+        error: "Ocurrió un error al cargar los articulos",
+      },
+    };
+  }
 };
 
 // export const getServerSideProps: GetServerSideProps = async ({
