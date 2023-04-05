@@ -19,6 +19,7 @@ export default function Articles({ articles }: { articles: any }) {
           <p>Cargando...</p>
         )}
       </main>
+
       <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-[#f23540] via-[#f58435] to-[#1b1d20] h-1 w-full"></div>
     </Layout>
   );
@@ -31,7 +32,7 @@ export async function getStaticProps() {
     console.log(
       "------------------------------------------------------------------------"
     );
-    console.log(articles);
+    //console.log(articles);
     return {
       props: { articles },
     };
