@@ -3,6 +3,7 @@ import Layout from "../../components/layout";
 import Articulo from "../../components/article";
 
 export default function Articles({ articles }: { articles: any }) {
+  articles.data.sort((a: any, b: any) => b.id - a.id);
   return (
     <Layout
       title={"Articles"}
