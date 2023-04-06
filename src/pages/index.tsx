@@ -114,7 +114,7 @@ export default function Home({ articles }: { articles: any }) {
                   </div>
                 </Link>
                 <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px] border border-2 rounded-[40px] border-white z-8">
-                  <div className="max-w-full max-h-full duration-500 hover:scale-150 ">
+                  <div className="max-w-full max-h-full duration-500 hover:scale-110 lg:hover:scale-150">
                     <Link
                       href={`/articles/${atributosId1.url}`}
                       target="_blank"
@@ -129,7 +129,6 @@ export default function Home({ articles }: { articles: any }) {
                         style={{ objectFit: "cover" }}
                       />
                     </Link>
-                    <div className="absolute inset-0 z-10 rounded-[40px] hover:box-shadow-[0 0 0 2px black] duration-500"></div>
                   </div>
                 </div>
               </div>
@@ -151,7 +150,7 @@ export default function Home({ articles }: { articles: any }) {
               </Link>
               <div></div>
               <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 border border-2 rounded-[40px] border-white s z-8">
-                <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <div className="max-w-full max-h-full duration-500 hover:scale-110 lg:hover:scale-150">
                   <Link href={`/articles/${atributosId2.url}`} target="_blank">
                     <img
                       src={
@@ -195,7 +194,7 @@ export default function Home({ articles }: { articles: any }) {
                 </div>
               </Link>
               <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 border border-2 rounded-[40px] border-white z-8">
-                <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                <div className="max-w-full max-h-full duration-500 hover:scale-110 lg:hover:scale-150">
                   <Link href={`/articles/${atributosId3.url}`} target="_blank">
                     <img
                       src={
@@ -237,7 +236,7 @@ export default function Home({ articles }: { articles: any }) {
                   </div>
                 </Link>
                 <div className="overflow-hidden mb-4 md:mb-0 md:mr-10 md:ml-[90px] border border-2 rounded-[40px] border-white z-8">
-                  <div className="max-w-full max-h-full duration-500 hover:scale-150">
+                  <div className="max-w-full max-h-full duration-500 hover:scale-110 lg:hover:scale-150">
                     <Link
                       href={`/articles/${atributosId4.url}`}
                       target="_blank"
