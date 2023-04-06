@@ -100,91 +100,91 @@ export default function Article({
         )}
         {title4 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title4}</div>
             <br />
           </>
         )}
         {text4 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text4}</div>
             <br />
             <br />
           </>
         )}
         {title5 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title5}</div>
             <br />
           </>
         )}
         {text5 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text5}</div>
             <br />
             <br />
           </>
         )}
         {title6 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title6}</div>
             <br />
           </>
         )}
         {text6 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text6}</div>
             <br />
             <br />
           </>
         )}
         {title7 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title7}</div>
             <br />
           </>
         )}
         {text7 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text7}</div>
             <br />
             <br />
           </>
         )}
         {title8 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title8}</div>
             <br />
           </>
         )}
         {text8 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text8}</div>
             <br />
             <br />
           </>
         )}
         {title9 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title9}</div>
             <br />
           </>
         )}
         {text9 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text9}</div>
             <br />
             <br />
           </>
         )}
         {title10 && (
           <>
-            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <div className="text-2xl font-bold text-justify">{title10}</div>
             <br />
           </>
         )}
         {text10 && (
           <>
-            <div className="text-lg text-justify">{text3}</div>
+            <div className="text-lg text-justify">{text10}</div>
             <br />
             <br />
           </>
@@ -212,7 +212,7 @@ export default function Article({
                 key={articlee.id}
                 className="bg-white rounded-lg shadow-lg p-4 mt-5"
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
@@ -233,9 +233,9 @@ export default function Article({
             <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
               <div
                 key={articlee.id}
-                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+                className="bg-white rounded-lg shadow-lg p-4 mt-5 "
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
@@ -258,7 +258,7 @@ export default function Article({
                 key={articlee.id}
                 className="bg-white rounded-lg shadow-lg p-4 mt-5"
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
@@ -281,7 +281,7 @@ export default function Article({
                 key={articlee.id}
                 className="bg-white rounded-lg shadow-lg p-4 mt-5"
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
@@ -304,7 +304,7 @@ export default function Article({
                 key={articlee.id}
                 className="bg-white rounded-lg shadow-lg p-4 mt-5"
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
@@ -327,7 +327,7 @@ export default function Article({
                 key={articlee.id}
                 className="bg-white rounded-lg shadow-lg p-4 mt-5"
               >
-                <h2 className="text-lg font-bold mb-2">
+                <h2 className="text-lg font-bold mb-2 text-black">
                   {articlee.attributes.title}
                 </h2>
                 <img
