@@ -13,13 +13,15 @@ export default function Article({
   articles: any;
 }) {
   const numArticles = articles.data.lenght;
-  const randomArticles = articles.data.slice(-8).reverse();
+  const randomArticles = articles.data.slice(-12).reverse();
 
   // divide los 8 artículos en 2 columnas
   const column1 = randomArticles.slice(0, 2);
   const column2 = randomArticles.slice(2, 4);
   const column3 = randomArticles.slice(4, 6);
   const column4 = randomArticles.slice(6, 8);
+  const column5 = randomArticles.slice(8, 10);
+  const column6 = randomArticles.slice(10, 12);
   if (!article) {
     return <div>Loading...</div>; // or some other error handling behavior
   }
@@ -69,60 +71,131 @@ export default function Article({
 
         <br />
       </div>
-
       <div className="mt-[30px] text-white flex flex-col w-full md:w-1/2 mx-auto px-6 md:px-0">
-        <div className="text-2xl font-bold text-justify">{title2}</div>
-        <br />
-        <div className="text-lg text-justify">{text2}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title3}</div>
-        <br />
-        <div className="text-lg text-justify">{text3}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title4}</div>
-        <br />
-        <div className="text-lg text-justify">{text4}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title5}</div>
-        <br />
-        <div className="text-lg text-justify">{text5}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title6}</div>
-        <br />
-        <div className="text-lg text-justify">{text6}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title7}</div>
-        <br />
-        <div className="text-lg text-justify">{text7}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title8}</div>
-        <br />
-        <div className="text-lg text-justify">{text8}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title9}</div>
-        <br />
-        <div className="text-lg text-justify">{text9}</div>
-        <br />
-        <br />
-        <div className="text-2xl font-bold text-justify">{title10}</div>
-        <br />
-        <div className="text-lg text-justify">{text10}</div>
-        <br />
-        <br />
+        {title2 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title2}</div>
+            <br />
+          </>
+        )}
+        {text2 && (
+          <>
+            <div className="text-lg text-justify">{text2}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title3 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text3 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title4 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text4 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title5 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text5 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title6 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text6 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title7 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text7 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title8 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text8 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title9 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text9 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
+        {title10 && (
+          <>
+            <div className="text-2xl font-bold text-justify">{title3}</div>
+            <br />
+          </>
+        )}
+        {text10 && (
+          <>
+            <div className="text-lg text-justify">{text3}</div>
+            <br />
+            <br />
+          </>
+        )}
       </div>
 
-      <div className="mt-[10px] bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
+      <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-1 w-full"></div>
 
       <div className="flex justify-center text-4xl md:text-5xl mt-4 mb-4">
-        <span className="text-white transition duration-800 font-grotesk">
-          RECOMENDED
+        <span className="text-white transition duration-800 font-grotesk md:text-left text-center">
+          RELATED
           <span className="text-[#fb776c] hover:text-yellow-400">
             {" "}
             ARTICLES:
@@ -130,7 +203,8 @@ export default function Article({
         </span>
       </div>
       <div className="bg-gradient-to-r from-[#1b1d20] via-blue-500 to-[#1b1d20] h-[3px] w-full"></div>
-      <div className="grid grid-cols-4 gap-4 mt-8">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         <div>
           {column1.map((articlee: any) => (
             <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
@@ -202,6 +276,52 @@ export default function Article({
         </div>
         <div>
           {column4.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div>
+          {column5.map((articlee: any) => (
+            <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
+              <div
+                key={articlee.id}
+                className="bg-white rounded-lg shadow-lg p-4 mt-5"
+              >
+                <h2 className="text-lg font-bold mb-2">
+                  {articlee.attributes.title}
+                </h2>
+                <img
+                  src={
+                    articlee.attributes.image1?.data?.attributes?.formats?.small
+                      ?.url
+                  }
+                  alt={`Imagen ${articlee.attributes.title}`}
+                  className="object-cover w-full h-32 border rounded-[10px] border-black"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div>
+          {column6.map((articlee: any) => (
             <Link href={`/articles/${articlee.attributes.url}`} target="_blank">
               <div
                 key={articlee.id}
