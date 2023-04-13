@@ -8,10 +8,10 @@ import paypal from "../../public/img/fotPaypal.webp";
 export default function TrustInScrapeInsta() {
   return (
     <Layout
-      title={"About Us"}
+      title={"TrustInScrapeInsta"}
       description={"Connect with us to support you on your AI journey"}
     >
-      <div className="">1</div>
+      <div className="">aaPPqweraasdjedadasdasASDW</div>
     </Layout>
   );
 }
